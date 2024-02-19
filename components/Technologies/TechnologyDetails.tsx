@@ -28,7 +28,7 @@ const TechnologyDetails = (props) => {
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
             {props.title.map((item,index)=>(
 
-<div className="mb-9">
+<div key={index} className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                {item}
                 </h3>
