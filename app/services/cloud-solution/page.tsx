@@ -44,8 +44,8 @@ const ServicesCloudSolutionPage = () => {
               center={true}
               /> 
       <div className="md:flex justify-center align-items-center">
-      {brandsData.map((brand) => (
-      <div className="w-auto h-auto  flex justify-center  align-items-center p-3">
+      {brandsData.map((brand,key) => (
+      <div key={key} className="w-auto h-auto  flex justify-center  align-items-center p-3">
         <img src={brand.image} style={{alignItems:'center'}} 
         />
       </div>
